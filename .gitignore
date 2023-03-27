@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Ignored files needed for lab
+__pycache__/
+.idea/
+venv/
