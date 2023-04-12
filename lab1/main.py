@@ -3,9 +3,24 @@ from even_list import even_str
 
 print("Hello, world!")
 
-print("15+5 = ", calculate(15, 5, "add"))
-print("15*5 = ", calculate(15, 5, "mul"))
-print("15-5 = ", calculate(15, 5, "sub"))
-print("15/5 = ", calculate(15, 5, "div"))
-
 print("Even numbers in the list: ", even_str)
+
+print("Enter first number")
+try:
+    num1 = int(input())
+except ValueError:
+    print("Wrong input!")
+    num1 = 0
+
+print("Enter second number")
+try:
+    num2 = int(input())
+except ValueError:
+    print("Wrong input!")
+    num2 = 0
+
+print(f"{num1} + {num2} = ", calculate(num1, num2, "add"))
+print(f"{num1} - {num2} = ", calculate(num1, num2, "sub"))
+print(f"{num1} * {num2} = ", calculate(num1, num2, "mul"))
+print(f"{num1} / {num2} = ", calculate(num1, num2, "div"))
+
