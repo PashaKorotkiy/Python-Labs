@@ -19,3 +19,17 @@ ABBREVIATIONS = (r"etc\.", r"Re\.", r"p\.", r"exp\.", r"err\.", r"et\.al\.", r"e
                  r"sec\.", r"\bg\.", r"cm\.", r"qt\.", r"p\.m\.")
 
 # Regular expr
+
+BEGINNING_OF_THE_SENTENCE = r"\s[A-Z]"
+END_OF_THE_SENTENCE = r"\w[.!?]"
+END_OF_NOT_DECLARATIVE_SENTENCE = r"\w[!?]"
+NUMBERS = r"\b\d+e[+-]\d+|\b\d+[.,]?\d+|\b\d+"
+ODD_CHARACTERS = r"[!.?\",']"
+INITIALS = r"[A-Z]\. [A-Z]\. [A-Z]"
+FILE_NAME = r"\w+\.\w+"
+THREE_DOTS = r"\.\.\."
+BEGINNING_OF_THE_DIRECT_SPEECH = r'\"[\w\d\s,\'!?.]*,\"'
+DIFFERENT_BEGINNING_OF_THE_DIRECT_SPEECH = r'\"[\w\d\s,\'!?.]*[?!]\"\s[a-z]'
+END_OF_THE_DIRECT_SPEECH = r', \"[\w\d\s,\'!?.]*[?!.]\"'
+DIRECT_SPEECH = r'\"[\w\d\s,\'!?.]*[?!.]\"'
+
